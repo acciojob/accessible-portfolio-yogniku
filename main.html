@@ -3,33 +3,45 @@
 <html>
 
 <head>
-	
-	<link rel="stylesheet" href="styles.css">
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>PORTFOLIO</h1>
-	<div>
-		<div role="img" aria-label="Description of the overall image">
-	</div>
-	<img src="https://images.unsplash.com/photo-1615022702095-ff2c036f3360?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="Girl in jacket"width="500" height="600">
-	<h1 role="name of student"id="eg1">NIkita khandagale</h1>
-	
-		<p id="eg2">Studied in st.Marys school newasa
-		college kannad
-		purciving 3rd year bsc computer science</p>
-		
-	<div role="navigation">
-		<nav>
-  <ul>
-    <li role="home"><a href="#home">Home</a></li>
-    <li role="about"><a href="#about">About</a></li>
-    <li role="number"><a href="#contact">Contact</a></li>
-  </ul>
-		</nav>
-</div>
-	
+
+    <header role="banner">
+        <h1 role="heading">My Portfolio</h1>
+        <nav role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#about">About Me</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+                <li role="listitem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://images.unsplash.com/photo-1615022702095-ff2c036f3360?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%" width="300" alt="Profile Picture" role="img">
+            <p>Hi, I'm Nikita khandagale, a passionate web developer with a focus on accessibility.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1: Web Accessibility</li> 
+                <li role="listitem">Project 2: Responsive Portfolio Website</li>
+                <li role="listitem">Project 3: Accessible Forms Tutorial</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>Contact me at <a href="nikitayogesh1605@gmail.com">nikitayogesh1605@gmail.com</a></p>
+    </footer>
     <script type="text/javascript" src="./script.js">
 </script>
 
